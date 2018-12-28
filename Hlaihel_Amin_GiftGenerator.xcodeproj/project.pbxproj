@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A2ACAC148B2DBA1C220A5E8 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */; };
+		AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AE78221D6C29500880425 /* MapViewController.swift */; };
 		AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */; };
 		AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */; };
 		AAFC9F0021D6ACD600CABC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */; };
-		AAFC9F0221D6ACE000CABC17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9F0121D6ACE000CABC17 /* Assets.xcassets */; };
+		AAFC9F0221D6ACE000CABC17 /* launcher_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9F0121D6ACE000CABC17 /* launcher_icon.png */; };
 		AAFC9F0521D6ACE000CABC17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9F0321D6ACE000CABC17 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hlaihel_Amin_GiftGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D9F72731F4439EEC1C9F512 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		8F6C640B2003B96BEBE1D73F /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		AA0AE78221D6C29500880425 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AAFC9EF721D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlaihel_Amin_GiftGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AAFC9EFF21D6ACD600CABC17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAFC9F0121D6ACE000CABC17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAFC9F0121D6ACE000CABC17 /* launcher_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launcher_icon.png; path = ../../../Downloads/launcher_icon.png; sourceTree = "<group>"; };
 		AAFC9F0421D6ACE000CABC17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAFC9F0621D6ACE000CABC17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2ACAC148B2DBA1C220A5E8 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38C5A58095BB10F627142D1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F6C640B2003B96BEBE1D73F /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */,
+				5D9F72731F4439EEC1C9F512 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		77E84E03F1FEED45F4237BFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AAFC9EEE21D6ACD600CABC17 = {
 			isa = PBXGroup;
 			children = (
 				AAFC9EF921D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator */,
 				AAFC9EF821D6ACD600CABC17 /* Products */,
+				38C5A58095BB10F627142D1F /* Pods */,
+				77E84E03F1FEED45F4237BFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,7 +83,8 @@
 				AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */,
 				AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */,
 				AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */,
-				AAFC9F0121D6ACE000CABC17 /* Assets.xcassets */,
+				AA0AE78221D6C29500880425 /* MapViewController.swift */,
+				AAFC9F0121D6ACE000CABC17 /* launcher_icon.png */,
 				AAFC9F0321D6ACE000CABC17 /* LaunchScreen.storyboard */,
 				AAFC9F0621D6ACE000CABC17 /* Info.plist */,
 			);
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AAFC9F0921D6ACE000CABC17 /* Build configuration list for PBXNativeTarget "Hlaihel_Amin_GiftGenerator" */;
 			buildPhases = (
+				ECF03E3C8A3528CC6B3BC5E3 /* [CP] Check Pods Manifest.lock */,
 				AAFC9EF321D6ACD600CABC17 /* Sources */,
 				AAFC9EF421D6ACD600CABC17 /* Frameworks */,
 				AAFC9EF521D6ACD600CABC17 /* Resources */,
+				077BF034BF28854D35DC7BA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFC9F0521D6ACE000CABC17 /* LaunchScreen.storyboard in Resources */,
-				AAFC9F0221D6ACE000CABC17 /* Assets.xcassets in Resources */,
+				AAFC9F0221D6ACE000CABC17 /* launcher_icon.png in Resources */,
 				AAFC9F0021D6ACD600CABC17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		077BF034BF28854D35DC7BA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECF03E3C8A3528CC6B3BC5E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hlaihel_Amin_GiftGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AAFC9EF321D6ACD600CABC17 /* Sources */ = {
@@ -136,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */,
+				AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */,
 				AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,8 +359,8 @@
 		};
 		AAFC9F0A21D6ACE000CABC17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6C640B2003B96BEBE1D73F /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hlaihel_Amin_GiftGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -297,8 +376,8 @@
 		};
 		AAFC9F0B21D6ACE000CABC17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D9F72731F4439EEC1C9F512 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hlaihel_Amin_GiftGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
