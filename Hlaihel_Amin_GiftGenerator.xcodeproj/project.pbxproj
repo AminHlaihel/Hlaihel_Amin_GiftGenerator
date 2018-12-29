@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A2ACAC148B2DBA1C220A5E8 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */; };
+		7666982551BFED68E20AFBC1 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */; };
 		AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0AE78221D6C29500880425 /* MapViewController.swift */; };
+		AA72071821D8008100DBBC4A /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7206DA21D7F1E400DBBC4A /* SQLite.framework */; };
+		AA72071921D8008D00DBBC4A /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA7206DA21D7F1E400DBBC4A /* SQLite.framework */; };
+		AA72071A21D8008D00DBBC4A /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA7206DA21D7F1E400DBBC4A /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA72072721D8060F00DBBC4A /* GiftsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72072621D8060F00DBBC4A /* GiftsTableViewController.swift */; };
+		AA72073121D8149500DBBC4A /* AjoutGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */; };
 		AA959F1C21D6DA0500AB21FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1B21D6DA0500AB21FA /* Images.xcassets */; };
 		AA959F1E21D6DAE400AB21FA /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */; };
 		AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */; };
@@ -18,11 +23,88 @@
 		AAFC9F0521D6ACE000CABC17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9F0321D6ACE000CABC17 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AA7206D921D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		AA7206DB21D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		AA7206DD21D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		AA7206DF21D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		AA7206E121D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		AA7206E321D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		AA7206E521D7F1E400DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		AA72071B21D8008D00DBBC4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EE247AD21C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA72071D21D8008E00DBBC4A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA72071A21D8008D00DBBC4A /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Hlaihel_Amin_GiftGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9F72731F4439EEC1C9F512 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; sourceTree = "<group>"; };
 		8F6C640B2003B96BEBE1D73F /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		AA0AE78221D6C29500880425 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite-2.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		AA7206FE21D7FBD700DBBC4A /* libSideMenuController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSideMenuController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA72072621D8060F00DBBC4A /* GiftsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftsTableViewController.swift; sourceTree = "<group>"; };
+		AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutGiftViewController.swift; sourceTree = "<group>"; };
 		AA959F1B21D6DA0500AB21FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		AAFC9EF721D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlaihel_Amin_GiftGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,7 +121,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A2ACAC148B2DBA1C220A5E8 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */,
+				AA72071821D8008100DBBC4A /* SQLite.framework in Frameworks */,
+				7666982551BFED68E20AFBC1 /* libPods-Hlaihel_Amin_GiftGenerator.a in Frameworks */,
+				AA72071921D8008D00DBBC4A /* SQLite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +142,24 @@
 		77E84E03F1FEED45F4237BFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA7206FE21D7FBD700DBBC4A /* libSideMenuController.a */,
 				1F56789D5ECB8C052DAD92B3 /* libPods-Hlaihel_Amin_GiftGenerator.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA7206D021D7F1E300DBBC4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7206DA21D7F1E400DBBC4A /* SQLite.framework */,
+				AA7206DC21D7F1E400DBBC4A /* SQLiteTests iOS.xctest */,
+				AA7206DE21D7F1E400DBBC4A /* SQLite.framework */,
+				AA7206E021D7F1E400DBBC4A /* SQLiteTests Mac.xctest */,
+				AA7206E221D7F1E400DBBC4A /* SQLite.framework */,
+				AA7206E421D7F1E400DBBC4A /* SQLiteTests tvOS.xctest */,
+				AA7206E621D7F1E400DBBC4A /* SQLite.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		AAFC9EEE21D6ACD600CABC17 = {
@@ -68,6 +167,7 @@
 			children = (
 				AAFC9EF921D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator */,
 				AAFC9EF821D6ACD600CABC17 /* Products */,
+				AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */,
 				38C5A58095BB10F627142D1F /* Pods */,
 				77E84E03F1FEED45F4237BFE /* Frameworks */,
 			);
@@ -87,12 +187,14 @@
 				AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */,
 				AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */,
 				AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */,
+				AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */,
 				AA0AE78221D6C29500880425 /* MapViewController.swift */,
 				AAFC9F0121D6ACE000CABC17 /* launcher_icon.png */,
 				AAFC9F0321D6ACE000CABC17 /* LaunchScreen.storyboard */,
 				AAFC9F0621D6ACE000CABC17 /* Info.plist */,
 				AA959F1B21D6DA0500AB21FA /* Images.xcassets */,
 				AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */,
+				AA72072621D8060F00DBBC4A /* GiftsTableViewController.swift */,
 			);
 			path = Hlaihel_Amin_GiftGenerator;
 			sourceTree = "<group>";
@@ -108,11 +210,13 @@
 				AAFC9EF321D6ACD600CABC17 /* Sources */,
 				AAFC9EF421D6ACD600CABC17 /* Frameworks */,
 				AAFC9EF521D6ACD600CABC17 /* Resources */,
-				077BF034BF28854D35DC7BA1 /* [CP] Copy Pods Resources */,
+				55E7FF6CE4CD19B58D5699DC /* [CP] Copy Pods Resources */,
+				AA72071D21D8008E00DBBC4A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AA72071C21D8008D00DBBC4A /* PBXTargetDependency */,
 			);
 			name = Hlaihel_Amin_GiftGenerator;
 			productName = Hlaihel_Amin_GiftGenerator;
@@ -145,12 +249,70 @@
 			mainGroup = AAFC9EEE21D6ACD600CABC17;
 			productRefGroup = AAFC9EF821D6ACD600CABC17 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA7206D021D7F1E300DBBC4A /* Products */;
+					ProjectRef = AA7206CF21D7F1E300DBBC4A /* SQLite.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AAFC9EF621D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AA7206DA21D7F1E400DBBC4A /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AA7206D921D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206DC21D7F1E400DBBC4A /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = AA7206DB21D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206DE21D7F1E400DBBC4A /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AA7206DD21D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206E021D7F1E400DBBC4A /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = AA7206DF21D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206E221D7F1E400DBBC4A /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AA7206E121D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206E421D7F1E400DBBC4A /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = AA7206E321D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AA7206E621D7F1E400DBBC4A /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = AA7206E521D7F1E400DBBC4A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AAFC9EF521D6ACD600CABC17 /* Resources */ = {
@@ -168,7 +330,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		077BF034BF28854D35DC7BA1 /* [CP] Copy Pods Resources */ = {
+		55E7FF6CE4CD19B58D5699DC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,12 +384,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */,
+				AA72072721D8060F00DBBC4A /* GiftsTableViewController.swift in Sources */,
+				AA72073121D8149500DBBC4A /* AjoutGiftViewController.swift in Sources */,
 				AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */,
 				AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA72071C21D8008D00DBBC4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SQLite iOS";
+			targetProxy = AA72071B21D8008D00DBBC4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */ = {
@@ -369,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8F6C640B2003B96BEBE1D73F /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hlaihel_Amin_GiftGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D9F72731F4439EEC1C9F512 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Hlaihel_Amin_GiftGenerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

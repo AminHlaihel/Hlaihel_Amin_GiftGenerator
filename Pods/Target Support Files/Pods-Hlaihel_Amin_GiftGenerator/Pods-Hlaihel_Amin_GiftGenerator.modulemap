@@ -1,0 +1,6 @@
+module Pods_Hlaihel_Amin_GiftGenerator {
+  umbrella header "Pods-Hlaihel_Amin_GiftGenerator-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -8,8 +8,20 @@
 
 import UIKit
 import CoreLocation
+import SQLite
 
 class ViewController: UIViewController, CLLocationManagerDelegate{
+    
+    var database: Connection!
+    let gifts_table = Table("gifts")
+    let GIFT_id = Expression<Int64>("id")
+    let nom = Expression<String>("nom")
+    let category = Expression<String>("category")
+    let type = Expression<String>("type")
+    let prix = Expression<Int>("prix")
+    
+    var tableExist = false   // false la table n'est encore pas créée
+
 
     let locationMgr = CLLocationManager()
     
@@ -22,12 +34,58 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         
         
+        
+        
         super.viewDidLoad()
+        
+        print ("--> viewDidLoad debut")
+        // Il est possible de créer des fichiers dans le répertoire "Documents" de votre application.
+        // Ici, création d'un fichier users.sqlite3
+        do {let documentDirectory = try
+            FileManager.default.url(for: .documentDirectory,                               in: .userDomainMask, appropriateFor: nil, create: true)
+            let fileUrl = documentDirectory.appendingPathComponent("gifts").appendingPathExtension("sqlite3")
+            let base = try Connection(fileUrl.path)
+            self.database = base;
+            
+        }catch {
+            print ("error")
+        }
+        
+        
+        
         
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        do {// Exécution du create si la table n'existe pas
+            
+            try self.database.run(self.gifts_table.create( ifNotExists: true) { table in
+                table.column(self.GIFT_id, primaryKey: true)
+                table.column(self.nom)
+                table.column(self.category)
+                table.column(self.type)
+                table.column(self.prix) })
+            print ("Table users est créée")
+            self.tableExist = true;
+            
+            
+            // insert les elements du base
+         
+            do{  try self.database.run(self.gifts_table.insert(nom <- "test", category <- "test category", type <- "testtype", prix <- 25))
+                print("insert success")
+            }catch{print("failed to insert")}
+            
+            
+        }
+        catch {
+            print ("error")
+            
+        }
+        
+        
     
+    print ("--> viewDidLoad fin")
+        
         
         
     }
@@ -99,6 +157,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         print("Error \(error)")
     }
     
+
 
     
     

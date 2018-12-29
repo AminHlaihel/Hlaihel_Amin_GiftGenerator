@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9DF786D9BC1D098366589C5A7E2C018B"
+               BlueprintIdentifier = "1BACBFFC3579241C700CBEEB64BB0F0E"
                BlueprintName = "Pods-Hlaihel_Amin_GiftGenerator"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-Hlaihel_Amin_GiftGenerator.a">

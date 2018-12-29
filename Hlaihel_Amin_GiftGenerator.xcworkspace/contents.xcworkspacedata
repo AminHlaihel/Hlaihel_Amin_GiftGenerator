@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SQLite-2.swift-master/SQLite.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Hlaihel_Amin_GiftGenerator.xcodeproj">
    </FileRef>
    <FileRef
