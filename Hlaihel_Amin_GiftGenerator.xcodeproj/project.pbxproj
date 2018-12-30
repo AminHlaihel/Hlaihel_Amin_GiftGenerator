@@ -16,6 +16,7 @@
 		AA72073121D8149500DBBC4A /* AjoutGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */; };
 		AA959F1C21D6DA0500AB21FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1B21D6DA0500AB21FA /* Images.xcassets */; };
 		AA959F1E21D6DAE400AB21FA /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */; };
+		AAE052B421D94D1A008DB08A /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE052B321D94D1A008DB08A /* Gift.swift */; };
 		AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */; };
 		AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */; };
 		AAFC9F0021D6ACD600CABC17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */; };
@@ -107,6 +108,7 @@
 		AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjoutGiftViewController.swift; sourceTree = "<group>"; };
 		AA959F1B21D6DA0500AB21FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		AAE052B321D94D1A008DB08A /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		AAFC9EF721D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlaihel_Amin_GiftGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				AA959F1B21D6DA0500AB21FA /* Images.xcassets */,
 				AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */,
 				AA72072621D8060F00DBBC4A /* GiftsTableViewController.swift */,
+				AAE052B321D94D1A008DB08A /* Gift.swift */,
 			);
 			path = Hlaihel_Amin_GiftGenerator;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */,
 				AA72072721D8060F00DBBC4A /* GiftsTableViewController.swift in Sources */,
 				AA72073121D8149500DBBC4A /* AjoutGiftViewController.swift in Sources */,
+				AAE052B421D94D1A008DB08A /* Gift.swift in Sources */,
 				AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */,
 				AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */,
 			);

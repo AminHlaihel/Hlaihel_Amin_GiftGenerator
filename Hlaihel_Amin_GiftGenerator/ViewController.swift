@@ -71,11 +71,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
             
             // insert les elements du base
          
-            do{  try self.database.run(self.gifts_table.insert(nom <- "test", category <- "test category", type <- "testtype", prix <- 25))
+       /*     do{  try self.database.run(self.gifts_table.insert(nom <- "test", category <- "test category", type <- "testtype", prix <- 25))
                 print("insert success")
             }catch{print("failed to insert")}
             
-            
+            */
         }
         catch {
             print ("error")

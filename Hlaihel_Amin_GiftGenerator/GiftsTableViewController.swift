@@ -21,7 +21,6 @@ class HeadlineTableViewCell: UITableViewCell {
     @IBOutlet weak var nom: UITextField!
     @IBOutlet weak var price: UITextField!
     
-    @IBOutlet weak var delete_icon: UIImageView!
 }
 
 class GiftsTableViewController: UITableViewController {
@@ -36,6 +35,7 @@ class GiftsTableViewController: UITableViewController {
     let category = Expression<String>("category")
     let type = Expression<String>("type")
     let prix = Expression<Int>("prix")
+    var gifts : [Gift] = []
     
     
     
@@ -43,7 +43,6 @@ class GiftsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         
         
         do {let documentDirectory = try
@@ -56,11 +55,40 @@ class GiftsTableViewController: UITableViewController {
             print ("error with fileURL")
         }
         
+        do{
+        self.gifts.removeAll()
+            
+          /*
+            var count = 0
+            do{  count = try database.scalar(gifts_table.count)
+                print ("count est \(count)")
+                
+                
+            }catch{print("error while counting")}
+            
+            var counting : Int
+            for counting in 0...count{
+        let users = try
+            self.database.prepare(self.gifts_table.filter(GIFT_id == Int64(counting)) )
+ */
+            for user in try self.database.prepare(gifts_table) {
+            let gift : Gift = Gift.init(nom:user[self.nom], category: user[self.category], prix: user[self.prix], type: user[self.type])
+            self.gifts.append(gift)
+            print("i added another gift")
+                }
+            
+            }catch{
+                print("error loading data from database")
+            }
+            
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
+        
     }
 
     // MARK: - Table view data source
@@ -79,7 +107,7 @@ class GiftsTableViewController: UITableViewController {
             
             
         }catch{print("error while counting")}        // #warning Incomplete implementation, return the number of rows
-        return count
+        return gifts.count
         
         
     }
@@ -88,19 +116,20 @@ class GiftsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifiantModuleCellule, for: indexPath)
             as! HeadlineTableViewCell
         
-        
+        /*
         do{
             
-            let users = try
+          let users = try
                 self.database.prepare(self.gifts_table.filter(GIFT_id == self.pk) )
             for user in users {
-                
+                let gift : Gift = Gift.init(nom:user[self.nom], category: user[self.category], prix: user[self.prix], type: user[self.type])
+                self.gifts.append(gift)
                 cell.nom?.text = String (user[self.nom])
                 cell.price?.text = String ("prix :\(user[self.prix]) euro")
-                cell.icon_gift?.image = UIImage (named: "gift_number_\(self.pk-1)")
                 if(self.pk<15){
-                    cell.delete_icon.isHidden = false
-                }
+                cell.icon_gift?.image = UIImage (named: "gift_number_\(self.pk)")
+                }else{
+                    cell.icon_gift?.image = UIImage (named: "Image")                }
                 
                 
                 /* print ("id =", user[self.UE_id], ", name =",
@@ -112,9 +141,22 @@ class GiftsTableViewController: UITableViewController {
         }catch{
             print("error selecting")
         }
-        self.pk += 1
+ */
+        cell.nom.text = String(self.gifts[indexPath.row].nom)
+        cell.price.text = String (self.gifts[indexPath.row].prix)
+        
+        if(indexPath.row<14){
+            cell.icon_gift?.image = UIImage (named: "gift_number_\(indexPath.row+1)")
+        }else{
+            cell.icon_gift?.image = UIImage (named: "Image")}
+        
+        
+        
+        print("i finished load \(gifts.count)")
         return cell
     }
+    
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -152,6 +194,35 @@ class GiftsTableViewController: UITableViewController {
     }
     */
 
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        if(indexPath.row>=14){
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            // delete item at indexPath
+           
+            print("row path is \(indexPath.row)")
+            do{
+                print("count of gifts is \(self.gifts.count)")
+                let alice = self.gifts_table.filter(self.nom == self.gifts[indexPath.row].nom)
+                try self.database.run(alice.delete())
+                self.gifts.remove(at: indexPath.row)
+            }catch{
+                print("Error deleting")
+            }
+            tableView.deleteRows(at: [indexPath], with: .fade)
+           // print(self.gifts[indexPath.row].descriptor)
+        }
+        
+    
+        
+        return [delete]
+        }
+        else{
+            showToast(message: "  can't delete chief")
+            return nil
+        }
+        
+    }
+    
     /*
     // Override to support conditional rearranging of the table view.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
@@ -169,5 +240,13 @@ class GiftsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
 
+    
+    
+    
+    
+    
 }
