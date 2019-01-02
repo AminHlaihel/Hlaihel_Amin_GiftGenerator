@@ -32,7 +32,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="B9s-db-WUc" kind="show" id="m77-fP-arU"/>
+                                    <action selector="tryingupdate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAT-ke-XSe"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dd-Sj-TJo">
@@ -392,6 +392,6 @@
         <image name="launcher_icon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="L3S-7X-4LN"/>
+        <segue reference="WHV-qu-G63"/>
     </inferredMetricsTieBreakers>
 </document>

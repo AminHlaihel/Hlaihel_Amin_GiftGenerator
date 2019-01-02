@@ -9,8 +9,15 @@
 import UIKit
 import CoreLocation
 import SQLite
+import GoogleMaps
+import GooglePlaces
+import GooglePlacePicker
 
-class ViewController: UIViewController, CLLocationManagerDelegate{
+class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate,GMSPlacePickerViewControllerDelegate{
+   
+    
+    
+    var mapViewC : MapViewController?
     
     var database: Connection!
     let gifts_table = Table("gifts")
@@ -19,6 +26,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     let category = Expression<String>("category")
     let type = Expression<String>("type")
     let prix = Expression<Int>("prix")
+    
+    var myLocation : CLLocation? = nil
+    var myLocationBool : Bool = false
+  weak var delegate:MapDelegate?
     
     var tableExist = false   // false la table n'est encore pas créée
 
@@ -37,6 +48,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         
         super.viewDidLoad()
+        
+         NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
         print ("--> viewDidLoad debut")
         // Il est possible de créer des fichiers dans le répertoire "Documents" de votre application.
@@ -89,7 +102,31 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         
         
     }
-
+   
+    override func viewWillAppear(_ animated: Bool) {
+        print("view will appear")
+    }
+    
+    
+    // To receive the results from the place picker 'self' will need to conform to
+    // GMSPlacePickerViewControllerDelegate and implement this code.
+    func placePicker(_ viewController: GMSPlacePickerViewController, didPick place: GMSPlace) {
+        // Dismiss the place picker, as it cannot dismiss itself.
+        viewController.dismiss(animated: true, completion: nil)
+        addDestination(name: place.name, lat: place.coordinate.latitude, long: place.coordinate.longitude)
+        
+        print("Place name \(place.name)")
+        print("Place address \(place.formattedAddress)")
+        print("Place attributions \(place.attributions)")
+    }
+    
+    func placePickerDidCancel(_ viewController: GMSPlacePickerViewController) {
+        // Dismiss the place picker, as it cannot dismiss itself.
+        viewController.dismiss(animated: true, completion: nil)
+        
+        print("No place selected")
+    }
+    
     
     func getLocation() {
         // 1
@@ -134,8 +171,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     // 1
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let currentLocation = locations.last!
+        self.myLocation = currentLocation
+        self.myLocationBool = true
         print("Current location: \(currentLocation)")
         
+        updateMap(location: currentLocation)
    /*
         let camera = GMSCameraPosition.camera(withLatitude: currentLocation.coordinate.latitude, longitude:currentLocation.coordinate.longitude, zoom: 6.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
@@ -159,7 +199,55 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     
 
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let baseTabBarVC = segue.destination as? UITabBarController {
+            if let firstTab = baseTabBarVC.viewControllers?.first as? MapViewController {
+                firstTab.delegate = self.delegate
+            }
+            
+        }
+        if let vc = segue.destination as? MapViewController {
+            mapViewC = vc
+        }
+    }
     
     
+    func updateMap(newLocation : CLLocation) {
+        print ("i'm updating the location")
+    }
+    
+    
+    @IBAction func tryingupdate(_ sender: Any) {
+       
+        let config = GMSPlacePickerConfig(viewport: nil)
+        let placePicker = GMSPlacePickerViewController(config: config)
+        placePicker.delegate = self
+        present(placePicker, animated: true, completion: nil)
+
+    }
+    
+  
+    
+    @objc func applicationDidBecomeActive(notification: NSNotification) {
+        // Application is back in the foreground
+        getLocation()
+        print("active")
+    }
+    
+}
+
+
+extension ViewController: MapDelegate {
+    func updateMap(location: CLLocation) {
+        print("doing update location from ViewController")
+        mapViewC?.updateMyLocation(newLocation: location)
+     
+        
+    }
+    
+    func addDestination(name: String, lat: Double, long: Double) {
+        print("sending destination")
+        mapViewC?.addDestination(name: name, lat: lat, long: long)
+    }
 }
 

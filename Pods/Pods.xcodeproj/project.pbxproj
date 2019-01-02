@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26926DBDA45E089E9D7E9D561ABB38C4 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A299D3B997426D2E001E3E7361313ED4 /* DLRadioButton-dummy.m */; };
-		5A31AD1FAE4D93A0264F109C39501217 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 071FE8874CCE2C2534E2E63F2A272704 /* DLRadioButton.m */; };
-		B3B83850C017CB4CE161385E93465CA8 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 52D2CF67454A73D9E06959D45D88EE73 /* DLRadioButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E4257595B8CCE1E49276D4005D3225ED /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E79623D8673D2561BE6CA5DC86667791 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */; };
+		26926DBDA45E089E9D7E9D561ABB38C4 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E53CDEBFB736E1FA9B3B20765077F1 /* DLRadioButton-dummy.m */; };
+		5A31AD1FAE4D93A0264F109C39501217 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BEB9E418424EB17A96EF4A5FCA7D4 /* DLRadioButton.m */; };
+		6F5B4E3D730F5A3D0E0E4A8C5D159995 /* Pods-Hlaihel_Amin_GiftGenerator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F54E87B2E6507EA9575E39D1DF15B1B /* Pods-Hlaihel_Amin_GiftGenerator-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3B83850C017CB4CE161385E93465CA8 /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F0619A0C44F500C5CF5CB9D4834CEB /* DLRadioButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C1DB02D9922B726995D7C31EFB7EEA9E /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC6287B2604BCBC2A037A96C34C22E1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D9A047146D44E298BF713E1230219866 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26466DE57F62A4A8BAC3A4A333F41563 /* SwiftyJSON.swift */; };
+		E011E667A30B523F07B566C290E87A86 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 895DA821BD69F49A37A67C3E6AF98251 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */; };
+		FF88668752AC14C61FF3DB2D85336ED0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F98EA20AD09B228B9FC7A2F5A9E8A55E /* SwiftyJSON-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5EF9F749E7BC3B805BB0D44FB66061F7 /* PBXContainerItemProxy */ = {
+		A29938E761A05BCDF14E45B437478E3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D343179C80529B124B06DBA61F1F6D3A;
+			remoteInfo = SwiftyJSON;
+		};
+		ED3E4A2F4F6FDF3399E79B94D2E94E06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -24,31 +35,49 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		071FE8874CCE2C2534E2E63F2A272704 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
-		20C055651BC75EF1D3131F1F68A3E66E /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
-		21297996490F2D875887AF9A913997E4 /* Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh"; sourceTree = "<group>"; };
-		489624332AB574D785565BC09A400CDB /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		51ECA4307FB407FEC1D4F719CCD1DBBC /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		52D2CF67454A73D9E06959D45D88EE73 /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
-		5F1A179A81DBD9CCFB6BF9F02619FAD1 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		7A6C1D45E7A873A7B44F4F7EDE08FCED /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist"; sourceTree = "<group>"; };
-		87AF6466219D36E52C099B9AC7C1C19A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		16A19CD7977542D5DB4F9515D452F157 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
+		23F0619A0C44F500C5CF5CB9D4834CEB /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
+		245D41A7BAC099D5E34E9EFB0D809079 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		24BD39C391253C86348C35690EDB2318 /* libDLRadioButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDLRadioButton.a; path = libDLRadioButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CB8796F82E3F53DD99B54AF68BD850 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SwiftyJSON.modulemap; path = ../../Headers/Public/SwiftyJSON/SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		26466DE57F62A4A8BAC3A4A333F41563 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		27984E341F99C282C0723BACF6C0CCB3 /* libPods-Hlaihel_Amin_GiftGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hlaihel_Amin_GiftGenerator.a"; path = "libPods-Hlaihel_Amin_GiftGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C3E392C589D72CD7CBB0E9A111BA6C /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		400DA36012CC957C454F9E6A50121CE4 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; sourceTree = "<group>"; };
+		424772D7D4359917BEFE110493275441 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		432EDC55736319F40022B352820B1948 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		4DC6287B2604BCBC2A037A96C34C22E1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SwiftyJSON-umbrella.h"; path = "../../Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		5F54E87B2E6507EA9575E39D1DF15B1B /* Pods-Hlaihel_Amin_GiftGenerator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hlaihel_Amin_GiftGenerator-umbrella.h"; sourceTree = "<group>"; };
+		6276C1D528067EE0EFA6B3EFCFF78FB0 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		747103C966B609BF71E4C56DD34CCBB4 /* libSwiftyJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwiftyJSON.a; path = libSwiftyJSON.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F403469647605B0BD03058087F1C8C /* Pods-Hlaihel_Amin_GiftGenerator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hlaihel_Amin_GiftGenerator.modulemap"; sourceTree = "<group>"; };
+		76D484000A3B694DCA92F289ED0491D0 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		7835B210C1169B0216303C7B87BACC7D /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		7C422855763C68FFDCDA73BCD76720A8 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		820BEB9E418424EB17A96EF4A5FCA7D4 /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		84E53CDEBFB736E1FA9B3B20765077F1 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		895DA821BD69F49A37A67C3E6AF98251 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hlaihel_Amin_GiftGenerator-dummy.m"; sourceTree = "<group>"; };
+		8B85CCDCFB22098085B81DC80DB81BF5 /* Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9C336988E42192E1BCDA99BEE085E3C0 /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; sourceTree = "<group>"; };
-		A0D73D828C616A1B6DE3E796FF3F0585 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig"; sourceTree = "<group>"; };
-		A299D3B997426D2E001E3E7361313ED4 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
-		A568EBD2C44922398E580B574F437EA9 /* DLRadioButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.xcconfig; sourceTree = "<group>"; };
-		B9B2DED85B0570E4E31D1BDE1B6B6ACC /* Pods-Hlaihel_Amin_GiftGenerator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hlaihel_Amin_GiftGenerator-resources.sh"; sourceTree = "<group>"; };
-		D59473E4D57E6C135C7CE01DFAED5AC7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
-		E79623D8673D2561BE6CA5DC86667791 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hlaihel_Amin_GiftGenerator-dummy.m"; sourceTree = "<group>"; };
-		E92CF1B25F00BF1DEF664BE95C205FFD /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
-		F46931F7BD15E7B0BBFBB3802991C6D9 /* libDLRadioButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libDLRadioButton.a; path = libDLRadioButton.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F635F32F78C98918D55DCE413A4BC417 /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F9D643C714DFC7F7DAAD4C892DF647EF /* libPods-Hlaihel_Amin_GiftGenerator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Hlaihel_Amin_GiftGenerator.a"; path = "libPods-Hlaihel_Amin_GiftGenerator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		965CA49C144A3919D8099D89B453B07E /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig"; sourceTree = "<group>"; };
+		B0E20675A03BFE9172003B634FB6E46F /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5462F96BB55A1F2DEB8CDC6887AF279 /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist"; sourceTree = "<group>"; };
+		CBCB1152C7889E5439CA70BABF40D983 /* Pods-Hlaihel_Amin_GiftGenerator-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hlaihel_Amin_GiftGenerator-resources.sh"; sourceTree = "<group>"; };
+		D50E49D370FA69405A133BD333C5D390 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		D5FB984240E7F2353F8F6F0957747745 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		EF26D5E3B72F762971D2FDBDFA6A553F /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		F98EA20AD09B228B9FC7A2F5A9E8A55E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		254A4898281F1ACD305D20EC0D94DED2 /* Frameworks */ = {
+		CFAFA7D09732B220F2F75F029B2DD389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A64E2C9C01B2E22A46BC66E196C6F0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		088F8CB3EC93F6677723924F1B6C9527 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7835B210C1169B0216303C7B87BACC7D /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0A08EB51745748E573FDF52CF19464C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24BD39C391253C86348C35690EDB2318 /* libDLRadioButton.a */,
+				27984E341F99C282C0723BACF6C0CCB3 /* libPods-Hlaihel_Amin_GiftGenerator.a */,
+				747103C966B609BF71E4C56DD34CCBB4 /* libSwiftyJSON.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,51 +119,100 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B8C02DB821D349E2AE2D9A94DF22A6F /* Pods-Hlaihel_Amin_GiftGenerator */ = {
+		1EC445E00986249E9DD76FD5431186B5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F635F32F78C98918D55DCE413A4BC417 /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown */,
-				7A6C1D45E7A873A7B44F4F7EDE08FCED /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist */,
-				E79623D8673D2561BE6CA5DC86667791 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */,
-				21297996490F2D875887AF9A913997E4 /* Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh */,
-				B9B2DED85B0570E4E31D1BDE1B6B6ACC /* Pods-Hlaihel_Amin_GiftGenerator-resources.sh */,
-				9C336988E42192E1BCDA99BEE085E3C0 /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */,
-				A0D73D828C616A1B6DE3E796FF3F0585 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */,
+				432EDC55736319F40022B352820B1948 /* GoogleMaps.bundle */,
 			);
-			name = "Pods-Hlaihel_Amin_GiftGenerator";
-			path = "Target Support Files/Pods-Hlaihel_Amin_GiftGenerator";
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		7664834E881A59C689DC310BEBDE0E09 /* DLRadioButton */ = {
+		2D52AC7F879B58F21468A0584828B5D2 /* GooglePlacePicker */ = {
 			isa = PBXGroup;
 			children = (
-				52D2CF67454A73D9E06959D45D88EE73 /* DLRadioButton.h */,
-				071FE8874CCE2C2534E2E63F2A272704 /* DLRadioButton.m */,
-				7745423EAD9B2236AD00A6BE2A0D6049 /* Support Files */,
+				DB1A44E8CC5928D059A3D2FA65424D74 /* Frameworks */,
+				088F8CB3EC93F6677723924F1B6C9527 /* Resources */,
 			);
-			name = DLRadioButton;
-			path = DLRadioButton;
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
 			sourceTree = "<group>";
 		};
-		7745423EAD9B2236AD00A6BE2A0D6049 /* Support Files */ = {
+		2EDB453FD6A03575FAB25FF95BA3B7C9 /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				A568EBD2C44922398E580B574F437EA9 /* DLRadioButton.xcconfig */,
-				A299D3B997426D2E001E3E7361313ED4 /* DLRadioButton-dummy.m */,
-				20C055651BC75EF1D3131F1F68A3E66E /* DLRadioButton-prefix.pch */,
+				3A6078AAD5032FB2983DEC1A6456CB66 /* Frameworks */,
+				C2EB145CD52BA1D4EC22034E5EA32241 /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		38A78BB55ABADAE6524D2B4FC0CB5BD3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				16A19CD7977542D5DB4F9515D452F157 /* DLRadioButton.xcconfig */,
+				84E53CDEBFB736E1FA9B3B20765077F1 /* DLRadioButton-dummy.m */,
+				D50E49D370FA69405A133BD333C5D390 /* DLRadioButton-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
-		77E7DEB14658192627F79E01EE04AB5C /* GooglePlaces */ = {
+		3A6078AAD5032FB2983DEC1A6456CB66 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA9C2B22FD57182FFB12A6E11405FBAC /* Frameworks */,
-				8FA598E9CB2FE9B16EBAC6D44C9454DD /* Resources */,
+				6276C1D528067EE0EFA6B3EFCFF78FB0 /* GooglePlaces.framework */,
 			);
-			name = GooglePlaces;
-			path = GooglePlaces;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4406836E0223C1959928856155DAC3BE /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				8B19A8E6ABC266A08F977FF196AAD384 /* Frameworks */,
+				1EC445E00986249E9DD76FD5431186B5 /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		4BA1D726DBE5ED0CF8D29807B5CA7EAD /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				8792ECCBE99BF90F55C3226FF962AB70 /* Base */,
+				4406836E0223C1959928856155DAC3BE /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		704A22562822596E24897E36EA48F31D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24CB8796F82E3F53DD99B54AF68BD850 /* SwiftyJSON.modulemap */,
+				D5FB984240E7F2353F8F6F0957747745 /* SwiftyJSON.xcconfig */,
+				F98EA20AD09B228B9FC7A2F5A9E8A55E /* SwiftyJSON-dummy.m */,
+				36C3E392C589D72CD7CBB0E9A111BA6C /* SwiftyJSON-prefix.pch */,
+				4DC6287B2604BCBC2A037A96C34C22E1 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		7AFAB38B4D72E31982355D441D6001A0 /* Pods-Hlaihel_Amin_GiftGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				75F403469647605B0BD03058087F1C8C /* Pods-Hlaihel_Amin_GiftGenerator.modulemap */,
+				B0E20675A03BFE9172003B634FB6E46F /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.markdown */,
+				C5462F96BB55A1F2DEB8CDC6887AF279 /* Pods-Hlaihel_Amin_GiftGenerator-acknowledgements.plist */,
+				895DA821BD69F49A37A67C3E6AF98251 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m */,
+				8B85CCDCFB22098085B81DC80DB81BF5 /* Pods-Hlaihel_Amin_GiftGenerator-frameworks.sh */,
+				CBCB1152C7889E5439CA70BABF40D983 /* Pods-Hlaihel_Amin_GiftGenerator-resources.sh */,
+				5F54E87B2E6507EA9575E39D1DF15B1B /* Pods-Hlaihel_Amin_GiftGenerator-umbrella.h */,
+				965CA49C144A3919D8099D89B453B07E /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */,
+				400DA36012CC957C454F9E6A50121CE4 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */,
+			);
+			name = "Pods-Hlaihel_Amin_GiftGenerator";
+			path = "Target Support Files/Pods-Hlaihel_Amin_GiftGenerator";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -124,103 +220,90 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				ABFECE8CFD2F490977B58CB9919D2AE6 /* Pods */,
-				E7A957E5F797899AA5A4A5815BB5F5C8 /* Products */,
-				F493E24C0305FA153FE0C5B9DBFC8B3D /* Targets Support Files */,
+				B60A8F9785612271E5DD32810F81297E /* Pods */,
+				0A08EB51745748E573FDF52CF19464C5 /* Products */,
+				E41B78B3B84765A02BEF8266AAEBED14 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83F02D492C1D109C5CAE9F1036965FE2 /* Resources */ = {
+		8792ECCBE99BF90F55C3226FF962AB70 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E92CF1B25F00BF1DEF664BE95C205FFD /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		8A376285E6EBD70B9DB33EC2966714F4 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				DEDBCC300FE03FAFA0FD8EFD88EE5EFD /* Frameworks */,
+				C45C1C82A083372D22D0A026445A1907 /* Frameworks */,
 			);
 			name = Base;
 			sourceTree = "<group>";
 		};
-		8FA598E9CB2FE9B16EBAC6D44C9454DD /* Resources */ = {
+		8B19A8E6ABC266A08F977FF196AAD384 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5F1A179A81DBD9CCFB6BF9F02619FAD1 /* GooglePlaces.bundle */,
+				7C422855763C68FFDCDA73BCD76720A8 /* GoogleMaps.framework */,
+				424772D7D4359917BEFE110493275441 /* GoogleMapsCore.framework */,
 			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ABFECE8CFD2F490977B58CB9919D2AE6 /* Pods */ = {
+		9C7A63CCF93AD7422D29158352DCE8CD /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
-				7664834E881A59C689DC310BEBDE0E09 /* DLRadioButton */,
-				DE8FCDBA4F4941586C16CCBEB1EB8738 /* GoogleMaps */,
-				77E7DEB14658192627F79E01EE04AB5C /* GooglePlaces */,
+				23F0619A0C44F500C5CF5CB9D4834CEB /* DLRadioButton.h */,
+				820BEB9E418424EB17A96EF4A5FCA7D4 /* DLRadioButton.m */,
+				38A78BB55ABADAE6524D2B4FC0CB5BD3 /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		B60A8F9785612271E5DD32810F81297E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A63CCF93AD7422D29158352DCE8CD /* DLRadioButton */,
+				4BA1D726DBE5ED0CF8D29807B5CA7EAD /* GoogleMaps */,
+				2D52AC7F879B58F21468A0584828B5D2 /* GooglePlacePicker */,
+				2EDB453FD6A03575FAB25FF95BA3B7C9 /* GooglePlaces */,
+				E3E94458430ACAEFA0C4F8416A4CBB30 /* SwiftyJSON */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CE51029595C5344F378293F20CB8AC59 /* Maps */ = {
+		C2EB145CD52BA1D4EC22034E5EA32241 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				DC566E5469A67DF0F151DE6AFEDCF6FA /* Frameworks */,
-				83F02D492C1D109C5CAE9F1036965FE2 /* Resources */,
+				76D484000A3B694DCA92F289ED0491D0 /* GooglePlaces.bundle */,
 			);
-			name = Maps;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		DA9C2B22FD57182FFB12A6E11405FBAC /* Frameworks */ = {
+		C45C1C82A083372D22D0A026445A1907 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				51ECA4307FB407FEC1D4F719CCD1DBBC /* GooglePlaces.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DC566E5469A67DF0F151DE6AFEDCF6FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				87AF6466219D36E52C099B9AC7C1C19A /* GoogleMaps.framework */,
-				D59473E4D57E6C135C7CE01DFAED5AC7 /* GoogleMapsCore.framework */,
+				245D41A7BAC099D5E34E9EFB0D809079 /* GoogleMapsBase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DE8FCDBA4F4941586C16CCBEB1EB8738 /* GoogleMaps */ = {
+		DB1A44E8CC5928D059A3D2FA65424D74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A376285E6EBD70B9DB33EC2966714F4 /* Base */,
-				CE51029595C5344F378293F20CB8AC59 /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
-			sourceTree = "<group>";
-		};
-		DEDBCC300FE03FAFA0FD8EFD88EE5EFD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				489624332AB574D785565BC09A400CDB /* GoogleMapsBase.framework */,
+				EF26D5E3B72F762971D2FDBDFA6A553F /* GooglePlacePicker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E7A957E5F797899AA5A4A5815BB5F5C8 /* Products */ = {
+		E3E94458430ACAEFA0C4F8416A4CBB30 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				F46931F7BD15E7B0BBFBB3802991C6D9 /* libDLRadioButton.a */,
-				F9D643C714DFC7F7DAAD4C892DF647EF /* libPods-Hlaihel_Amin_GiftGenerator.a */,
+				26466DE57F62A4A8BAC3A4A333F41563 /* SwiftyJSON.swift */,
+				704A22562822596E24897E36EA48F31D /* Support Files */,
 			);
-			name = Products;
+			name = SwiftyJSON;
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
-		F493E24C0305FA153FE0C5B9DBFC8B3D /* Targets Support Files */ = {
+		E41B78B3B84765A02BEF8266AAEBED14 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B8C02DB821D349E2AE2D9A94DF22A6F /* Pods-Hlaihel_Amin_GiftGenerator */,
+				7AFAB38B4D72E31982355D441D6001A0 /* Pods-Hlaihel_Amin_GiftGenerator */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -236,32 +319,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1EB32A0BA2C93195A01A83731EE38E4F /* Headers */ = {
+		45D1216C3B48A010287740BE09D72F75 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DB02D9922B726995D7C31EFB7EEA9E /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72B1D5C71EEC63F0240213F34105F928 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F5B4E3D730F5A3D0E0E4A8C5D159995 /* Pods-Hlaihel_Amin_GiftGenerator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1BACBFFC3579241C700CBEEB64BB0F0E /* Pods-Hlaihel_Amin_GiftGenerator */ = {
+		2F65391B282BC6741FBBCC88F04DFAC0 /* Pods-Hlaihel_Amin_GiftGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B665CA10BF27F92979CAA30E7F526398 /* Build configuration list for PBXNativeTarget "Pods-Hlaihel_Amin_GiftGenerator" */;
+			buildConfigurationList = 6751517D48326F02219F7F28D03CDB48 /* Build configuration list for PBXNativeTarget "Pods-Hlaihel_Amin_GiftGenerator" */;
 			buildPhases = (
-				1EB32A0BA2C93195A01A83731EE38E4F /* Headers */,
-				8C3C7FE7A85BD6F6F5A1381908968C32 /* Sources */,
-				254A4898281F1ACD305D20EC0D94DED2 /* Frameworks */,
+				72B1D5C71EEC63F0240213F34105F928 /* Headers */,
+				658C538471D36ADB7D3E90685ACA3F86 /* Sources */,
+				E3A64E2C9C01B2E22A46BC66E196C6F0 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F01039FD4B16DD3965AA6882A41CC72 /* PBXTargetDependency */,
+				51F8E8C4955FA2A79AA6C3293A9AEC1A /* PBXTargetDependency */,
+				39D3D8C81144DB3AE17E212CCC97CAE6 /* PBXTargetDependency */,
 			);
 			name = "Pods-Hlaihel_Amin_GiftGenerator";
 			productName = "Pods-Hlaihel_Amin_GiftGenerator";
-			productReference = F9D643C714DFC7F7DAAD4C892DF647EF /* libPods-Hlaihel_Amin_GiftGenerator.a */;
+			productReference = 27984E341F99C282C0723BACF6C0CCB3 /* libPods-Hlaihel_Amin_GiftGenerator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D343179C80529B124B06DBA61F1F6D3A /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21A2A8CD186A5F0392A8E413646E73D3 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				45D1216C3B48A010287740BE09D72F75 /* Headers */,
+				044A264873E79661DA61D4FF0C8C7BA2 /* Sources */,
+				CFAFA7D09732B220F2F75F029B2DD389 /* Frameworks */,
+				CFAB3506960BF751CE3003FC7DDF9460 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 747103C966B609BF71E4C56DD34CCBB4 /* libSwiftyJSON.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D9F2770F20E3A09A02A5E2826A48778E /* DLRadioButton */ = {
@@ -278,7 +389,7 @@
 			);
 			name = DLRadioButton;
 			productName = DLRadioButton;
-			productReference = F46931F7BD15E7B0BBFBB3802991C6D9 /* libDLRadioButton.a */;
+			productReference = 24BD39C391253C86348C35690EDB2318 /* libDLRadioButton.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -298,22 +409,60 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E7A957E5F797899AA5A4A5815BB5F5C8 /* Products */;
+			productRefGroup = 0A08EB51745748E573FDF52CF19464C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D9F2770F20E3A09A02A5E2826A48778E /* DLRadioButton */,
-				1BACBFFC3579241C700CBEEB64BB0F0E /* Pods-Hlaihel_Amin_GiftGenerator */,
+				2F65391B282BC6741FBBCC88F04DFAC0 /* Pods-Hlaihel_Amin_GiftGenerator */,
+				D343179C80529B124B06DBA61F1F6D3A /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFAB3506960BF751CE3003FC7DDF9460 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap",
+				"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftyJSON/SwiftyJSON-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		8C3C7FE7A85BD6F6F5A1381908968C32 /* Sources */ = {
+		044A264873E79661DA61D4FF0C8C7BA2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4257595B8CCE1E49276D4005D3225ED /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m in Sources */,
+				FF88668752AC14C61FF3DB2D85336ED0 /* SwiftyJSON-dummy.m in Sources */,
+				D9A047146D44E298BF713E1230219866 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658C538471D36ADB7D3E90685ACA3F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E011E667A30B523F07B566C290E87A86 /* Pods-Hlaihel_Amin_GiftGenerator-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,11 +478,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F01039FD4B16DD3965AA6882A41CC72 /* PBXTargetDependency */ = {
+		39D3D8C81144DB3AE17E212CCC97CAE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D343179C80529B124B06DBA61F1F6D3A /* SwiftyJSON */;
+			targetProxy = A29938E761A05BCDF14E45B437478E3C /* PBXContainerItemProxy */;
+		};
+		51F8E8C4955FA2A79AA6C3293A9AEC1A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
 			target = D9F2770F20E3A09A02A5E2826A48778E /* DLRadioButton */;
-			targetProxy = 5EF9F749E7BC3B805BB0D44FB66061F7 /* PBXContainerItemProxy */;
+			targetProxy = ED3E4A2F4F6FDF3399E79B94D2E94E06 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -406,7 +561,7 @@
 		};
 		12066E71BD3D5D1438FB4DFCDA4BB7AB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A568EBD2C44922398E580B574F437EA9 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 16A19CD7977542D5DB4F9515D452F157 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -428,24 +583,27 @@
 			};
 			name = Debug;
 		};
-		5F14F7CF5BA5E87937416A0C1767BCE2 /* Debug */ = {
+		5A2E48F3BF1457B1B6469392DF4C4436 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C336988E42192E1BCDA99BEE085E3C0 /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */;
+			baseConfigurationReference = D5FB984240E7F2353F8F6F0957747745 /* SwiftyJSON.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -514,7 +672,7 @@
 		};
 		99C131BC8C2B9E262445546A20AB28BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A568EBD2C44922398E580B574F437EA9 /* DLRadioButton.xcconfig */;
+			baseConfigurationReference = 16A19CD7977542D5DB4F9515D452F157 /* DLRadioButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -537,9 +695,9 @@
 			};
 			name = Release;
 		};
-		A89C70BA1404509FD508CCC700D65837 /* Release */ = {
+		BAB91F7D9FE103A25ADFB42A5472969F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0D73D828C616A1B6DE3E796FF3F0585 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */;
+			baseConfigurationReference = 965CA49C144A3919D8099D89B453B07E /* Pods-Hlaihel_Amin_GiftGenerator.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -549,6 +707,56 @@
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D2BB54CE3A8D53EAFFD4AD7CB3A07D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5FB984240E7F2353F8F6F0957747745 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftyJSON/SwiftyJSON.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EECF9F09478504D1FB25D345628D2F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 400DA36012CC957C454F9E6A50121CE4 /* Pods-Hlaihel_Amin_GiftGenerator.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hlaihel_Amin_GiftGenerator/Pods-Hlaihel_Amin_GiftGenerator.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -563,6 +771,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		21A2A8CD186A5F0392A8E413646E73D3 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A2E48F3BF1457B1B6469392DF4C4436 /* Debug */,
+				D2BB54CE3A8D53EAFFD4AD7CB3A07D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -572,11 +789,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B665CA10BF27F92979CAA30E7F526398 /* Build configuration list for PBXNativeTarget "Pods-Hlaihel_Amin_GiftGenerator" */ = {
+		6751517D48326F02219F7F28D03CDB48 /* Build configuration list for PBXNativeTarget "Pods-Hlaihel_Amin_GiftGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5F14F7CF5BA5E87937416A0C1767BCE2 /* Debug */,
-				A89C70BA1404509FD508CCC700D65837 /* Release */,
+				BAB91F7D9FE103A25ADFB42A5472969F /* Debug */,
+				EECF9F09478504D1FB25D345628D2F81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
