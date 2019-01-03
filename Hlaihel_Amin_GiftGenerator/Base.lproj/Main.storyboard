@@ -19,14 +19,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tzZ-Yf-4h3">
-                                <rect key="frame" x="0.0" y="75" width="375" height="285"/>
+                                <rect key="frame" x="0.0" y="75" width="375" height="266"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="a6j-UO-pxu" kind="embed" id="NIW-e7-OV3"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AK-DS-PWa">
-                                <rect key="frame" x="165" y="551" width="85" height="30"/>
+                                <rect key="frame" x="130" y="349" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Liste of gifts">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,10 +48,239 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SfD-qr-K7c">
+                                <rect key="frame" x="199" y="421" width="99" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClD-FI-BDT" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="96" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Enfant">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatEnfant:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qcp-20-aug"/>
+                                            <outletCollection property="otherButtons" destination="9Wn-Ji-bYw" id="hLT-7A-TOu"/>
+                                            <outletCollection property="otherButtons" destination="bZO-7W-iXs" id="1SA-kl-gl1"/>
+                                            <outletCollection property="otherButtons" destination="5AZ-md-ZbT" id="89c-PL-PBh"/>
+                                            <outletCollection property="otherButtons" destination="8fU-a9-KC1" id="gP3-7s-6pE"/>
+                                            <outletCollection property="otherButtons" destination="chy-I8-UGU" id="ilF-Ho-lmE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZO-7W-iXs" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="124" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Amical">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatAmical:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGx-cY-Ovc"/>
+                                            <outletCollection property="otherButtons" destination="9Wn-Ji-bYw" id="onm-rB-mtW"/>
+                                            <outletCollection property="otherButtons" destination="ClD-FI-BDT" id="aaE-IJ-ulO"/>
+                                            <outletCollection property="otherButtons" destination="5AZ-md-ZbT" id="uOb-QP-Mjn"/>
+                                            <outletCollection property="otherButtons" destination="8fU-a9-KC1" id="evg-xW-CkY"/>
+                                            <outletCollection property="otherButtons" destination="chy-I8-UGU" id="GOv-Du-Zts"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AZ-md-ZbT" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="151" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Romantique">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatRom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EH5-9D-Fo2"/>
+                                            <outletCollection property="otherButtons" destination="9Wn-Ji-bYw" id="NVO-37-3iz"/>
+                                            <outletCollection property="otherButtons" destination="ClD-FI-BDT" id="2Kz-Bd-30a"/>
+                                            <outletCollection property="otherButtons" destination="bZO-7W-iXs" id="loI-xH-Zlb"/>
+                                            <outletCollection property="otherButtons" destination="8fU-a9-KC1" id="8nj-3S-35R"/>
+                                            <outletCollection property="otherButtons" destination="chy-I8-UGU" id="eFV-Dx-4jl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-a9-KC1" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="176" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Troll">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatTroll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVo-Yf-cBT"/>
+                                            <outletCollection property="otherButtons" destination="9Wn-Ji-bYw" id="fP9-kU-AOV"/>
+                                            <outletCollection property="otherButtons" destination="ClD-FI-BDT" id="Zyq-iS-1Xa"/>
+                                            <outletCollection property="otherButtons" destination="bZO-7W-iXs" id="xRQ-cc-vja"/>
+                                            <outletCollection property="otherButtons" destination="5AZ-md-ZbT" id="oXg-dQ-mAL"/>
+                                            <outletCollection property="otherButtons" destination="chy-I8-UGU" id="elx-hI-a57"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pII-r4-dDU">
+                                        <rect key="frame" x="0.0" y="0.0" width="99" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Wn-Ji-bYw" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="66" width="160" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Autre">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatAutre:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BU0-YX-tqr"/>
+                                            <outletCollection property="otherButtons" destination="ClD-FI-BDT" id="5m0-FJ-0rH"/>
+                                            <outletCollection property="otherButtons" destination="bZO-7W-iXs" id="Hf7-d5-GmP"/>
+                                            <outletCollection property="otherButtons" destination="5AZ-md-ZbT" id="hZK-UT-13K"/>
+                                            <outletCollection property="otherButtons" destination="8fU-a9-KC1" id="Aba-hd-CVs"/>
+                                            <outletCollection property="otherButtons" destination="chy-I8-UGU" id="RyP-Nc-uR9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chy-I8-UGU" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="36" width="160" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="All">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioCatAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwC-GT-d5X"/>
+                                            <outletCollection property="otherButtons" destination="9Wn-Ji-bYw" id="KP5-pO-fw3"/>
+                                            <outletCollection property="otherButtons" destination="ClD-FI-BDT" id="6Px-JG-BY4"/>
+                                            <outletCollection property="otherButtons" destination="bZO-7W-iXs" id="Qdc-KT-3Xg"/>
+                                            <outletCollection property="otherButtons" destination="5AZ-md-ZbT" id="kQn-fX-fMp"/>
+                                            <outletCollection property="otherButtons" destination="8fU-a9-KC1" id="mF9-Nr-19D"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-G3-YLD">
+                                <rect key="frame" x="7" y="635" width="265" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="backgroundColor" red="0.12230102338481763" green="0.67590887690306989" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <state key="normal" title="Generate a gift">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateGift:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HjB-3T-6EN"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IkN-Ac-gnU">
+                                <rect key="frame" x="27" y="474" width="82" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y95-k5-UbK" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="65" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Food">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioTypeFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ar-Tx-bAZ"/>
+                                            <outletCollection property="otherButtons" destination="Xrf-QQ-X8g" id="cSw-50-ZtB"/>
+                                            <outletCollection property="otherButtons" destination="erQ-fy-Bp0" id="UWm-bb-f5i"/>
+                                            <outletCollection property="otherButtons" destination="kj6-ar-GSV" id="1vN-vF-eoO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kj6-ar-GSV" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="34" width="158" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Whatever">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioTypeWhat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ifL-L0-5nj"/>
+                                            <outletCollection property="otherButtons" destination="y95-k5-UbK" id="VdA-gv-9Jg"/>
+                                            <outletCollection property="otherButtons" destination="Xrf-QQ-X8g" id="w5n-hR-dOw"/>
+                                            <outletCollection property="otherButtons" destination="erQ-fy-Bp0" id="u0N-6s-C4x"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W2-7P-XuL">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrf-QQ-X8g" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="93" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Jewlery">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioTypeJewlery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vwp-nF-HdU"/>
+                                            <outletCollection property="otherButtons" destination="y95-k5-UbK" id="pKp-qz-TEK"/>
+                                            <outletCollection property="otherButtons" destination="erQ-fy-Bp0" id="JbT-CK-fqJ"/>
+                                            <outletCollection property="otherButtons" destination="kj6-ar-GSV" id="tYa-iI-gbE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erQ-fy-Bp0" customClass="DLRadioButton">
+                                        <rect key="frame" x="0.0" y="123" width="207" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <state key="normal" title="Toys">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="radioTypeToys:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PTX-7n-644"/>
+                                            <outletCollection property="otherButtons" destination="Xrf-QQ-X8g" id="Czy-tN-Hy1"/>
+                                            <outletCollection property="otherButtons" destination="y95-k5-UbK" id="ahu-28-i1y"/>
+                                            <outletCollection property="otherButtons" destination="kj6-ar-GSV" id="Tl4-Tb-3zv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmG-uj-Meb">
+                                <rect key="frame" x="280" y="633" width="84" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1139816451" green="1" blue="0.068935624170000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <segue destination="8DR-iY-4hv" kind="show" id="aPq-0U-Lid"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qZw-vd-anx">
+                                <rect key="frame" x="36" y="412" width="74" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2O-bE-avk">
+                                <rect key="frame" x="108" y="421" width="11" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text" base64-UTF8="YES">
+EBDigqw
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prix max" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWU-9G-xEe">
+                                <rect key="frame" x="40" y="391" width="66" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="prix_max_testField" destination="qZw-vd-anx" id="Ct1-S7-HSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +291,7 @@
             <objects>
                 <viewController id="a6j-UO-pxu" customClass="MapViewController" customModule="Hlaihel_Amin_GiftGenerator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pf8-QK-qmy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5RO-hy-nZo"/>
@@ -387,11 +616,116 @@
             </objects>
             <point key="canvasLocation" x="2205.5999999999999" y="48.125937031484263"/>
         </scene>
+        <!--Custom Alert View-->
+        <scene sceneID="EiX-9w-OJX">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertID" id="IuU-O7-oGe" customClass="CustomAlertView" customModule="Hlaihel_Amin_GiftGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="kGN-HJ-Uww">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hqa-ZN-RKL" userLabel="CustomAlertID">
+                                <rect key="frame" x="38" y="176" width="268" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launcher_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="eBo-A5-E2M">
+                                        <rect key="frame" x="8" y="54" width="92" height="107.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-UC-4zY">
+                                        <rect key="frame" x="0.0" y="8" width="268" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0b1-dr-Pv4">
+                                        <rect key="frame" x="184" y="191" width="76" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.98650024830000005" blue="0.067297073289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="canceltapped:" destination="IuU-O7-oGe" eventType="touchUpInside" id="jgr-tN-phB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ub-X2-Oco">
+                                        <rect key="frame" x="13" y="191" width="79" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.98650024830000005" blue="0.067297073289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Pick Place">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPicktapped:" destination="IuU-O7-oGe" eventType="touchUpInside" id="SYS-u9-STL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNx-ie-c3D">
+                                        <rect key="frame" x="100" y="191" width="81" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.98650024830000005" blue="0.067297073289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="ReGenerate">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onRandomtapped:" destination="IuU-O7-oGe" eventType="touchUpInside" id="W3c-Dr-pB2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ds0-fl-3EK">
+                                        <rect key="frame" x="158" y="128" width="11" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHS-eC-LJu">
+                                        <rect key="frame" x="108" y="71" width="168" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prix" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUo-h7-PLi">
+                                        <rect key="frame" x="108" y="128" width="116" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MTV-1T-h0k"/>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="Hqa-ZN-RKL" id="lER-aJ-Olk"/>
+                        <outlet property="cancelButton" destination="0b1-dr-Pv4" id="Rie-7H-VLL"/>
+                        <outlet property="generateButton" destination="xNx-ie-c3D" id="lbH-rK-W8F"/>
+                        <outlet property="imageField" destination="eBo-A5-E2M" id="WcG-AO-PKt"/>
+                        <outlet property="nameField" destination="sHS-eC-LJu" id="3lw-7H-2om"/>
+                        <outlet property="pickButton" destination="4Ub-X2-Oco" id="pNr-Y1-bKU"/>
+                        <outlet property="prixField" destination="wUo-h7-PLi" id="hU7-lm-D8c"/>
+                        <outlet property="titelField" destination="Zv8-UC-4zY" id="Bw5-yF-YhT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZy-UX-27q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2909.5999999999999" y="60.719640179910051"/>
+        </scene>
     </scenes>
     <resources>
         <image name="launcher_icon.png" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Haf-6S-J5t"/>
         <segue reference="WHV-qu-G63"/>
     </inferredMetricsTieBreakers>
 </document>
