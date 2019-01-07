@@ -13,7 +13,7 @@ import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
 
-class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate,GMSPlacePickerViewControllerDelegate{
+class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewDelegate,GMSPlacePickerViewControllerDelegate,UIApplicationDelegate{
    
     
     
@@ -29,6 +29,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
     let CATEGORY_AUTRE : String = "Autre"
     let CATEGORY_ALL : String = "All"
     
+
+    
+
     
     
     var prix_max : Int = 0
@@ -72,6 +75,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
         
         
         super.viewDidLoad()
+        
+        let colors = Colors()
+        view.backgroundColor = UIColor.clear
+        var backgroundLayer = colors.gl
+        backgroundLayer!.frame = view.frame
+        view.layer.insertSublayer(backgroundLayer!, at: 0)
+        
         
          NotificationCenter.default.addObserver(self, selector: #selector(applicationDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         
@@ -463,7 +473,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
         if(gifts.count != 0){
             var imageindex : Int = 0
             let number = Int.random(in: 0 ... gifts.count-1)
-            showToast(message: "your gift is \(gifts[number].nom) et le prix est \(gifts[number].prix)")
+            //showToast(message: "your gift is \(gifts[number].nom) et le prix est \(gifts[number].prix)")
             
             
             while( imageindex < 14  && gifts[number].nom != giftnames[imageindex] ){
@@ -523,6 +533,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, UIPickerViewD
     
     
     
+
+    
+    
+    
+    
+    
+  
+    
+    
 }
 
 
@@ -538,6 +557,7 @@ extension ViewController: MapDelegate {
         print("sending destination")
         mapViewC?.addDestination(name: name, lat: lat, long: long)
     }
+    
 }
 
 extension ViewController: CustomAlertViewDelegate {

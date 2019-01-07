@@ -51,6 +51,11 @@ class AjoutGiftViewController: UIViewController {
         super.viewDidLoad()
 
         
+        let colors = ColorsBlue()
+        view.backgroundColor = UIColor.clear
+        var backgroundLayer = colors.gl
+        backgroundLayer!.frame = view.frame
+        view.layer.insertSublayer(backgroundLayer!, at: 0)
         do {let documentDirectory = try
             FileManager.default.url(for: .documentDirectory,
                                     in: .userDomainMask, appropriateFor: nil, create: true)

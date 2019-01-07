@@ -22,6 +22,10 @@
 		AA959F1C21D6DA0500AB21FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1B21D6DA0500AB21FA /* Images.xcassets */; };
 		AA959F1E21D6DAE400AB21FA /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */; };
 		AAC41A3521DC0A830016E4A2 /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC41A3421DC0A830016E4A2 /* MapDelegate.swift */; };
+		AADF257E21E3D5C20084E1CC /* ColorsGrad.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF257D21E3D5C20084E1CC /* ColorsGrad.swift */; };
+		AADF258621E3DAE00084E1CC /* ColorsGradBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF258521E3DAE00084E1CC /* ColorsGradBlue.swift */; };
+		AADF258821E3DD570084E1CC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF258721E3DD570084E1CC /* SettingsViewController.swift */; };
+		AADF258A21E3EF2A0084E1CC /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADF258921E3EF2A0084E1CC /* PasswordViewController.swift */; };
 		AAE052B421D94D1A008DB08A /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE052B321D94D1A008DB08A /* Gift.swift */; };
 		AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */; };
 		AAFC9EFD21D6ACD600CABC17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */; };
@@ -120,6 +124,10 @@
 		AA959F1B21D6DA0500AB21FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA959F1D21D6DAE400AB21FA /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		AAC41A3421DC0A830016E4A2 /* MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDelegate.swift; sourceTree = "<group>"; };
+		AADF257D21E3D5C20084E1CC /* ColorsGrad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsGrad.swift; sourceTree = "<group>"; };
+		AADF258521E3DAE00084E1CC /* ColorsGradBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsGradBlue.swift; sourceTree = "<group>"; };
+		AADF258721E3DD570084E1CC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AADF258921E3EF2A0084E1CC /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		AAE052B321D94D1A008DB08A /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		AAFC9EF721D6ACD600CABC17 /* Hlaihel_Amin_GiftGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlaihel_Amin_GiftGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAFC9EFA21D6ACD600CABC17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +210,10 @@
 				AAFC9EFC21D6ACD600CABC17 /* ViewController.swift */,
 				AA372ED021DD6770009C8D91 /* FirstLaunch.swift */,
 				AAFC9EFE21D6ACD600CABC17 /* Main.storyboard */,
+				AADF258921E3EF2A0084E1CC /* PasswordViewController.swift */,
+				AADF258721E3DD570084E1CC /* SettingsViewController.swift */,
+				AADF258521E3DAE00084E1CC /* ColorsGradBlue.swift */,
+				AADF257D21E3D5C20084E1CC /* ColorsGrad.swift */,
 				AA72073021D8149500DBBC4A /* AjoutGiftViewController.swift */,
 				AA0AE78221D6C29500880425 /* MapViewController.swift */,
 				AA6EB29D21DC37790062A3A5 /* longlatname.swift */,
@@ -416,8 +428,12 @@
 				AA0AE78321D6C29600880425 /* MapViewController.swift in Sources */,
 				AA372ED121DD6770009C8D91 /* FirstLaunch.swift in Sources */,
 				AA6EB29E21DC37790062A3A5 /* longlatname.swift in Sources */,
+				AADF258821E3DD570084E1CC /* SettingsViewController.swift in Sources */,
 				AA372EDE21DD7F6D009C8D91 /* customalertdelegate.swift in Sources */,
+				AADF258A21E3EF2A0084E1CC /* PasswordViewController.swift in Sources */,
 				AAFC9EFB21D6ACD600CABC17 /* AppDelegate.swift in Sources */,
+				AADF258621E3DAE00084E1CC /* ColorsGradBlue.swift in Sources */,
+				AADF257E21E3D5C20084E1CC /* ColorsGrad.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
